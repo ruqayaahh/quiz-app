@@ -1,0 +1,153 @@
+$primarycolor: navy;
+$secondarycolor: cornsilk;
+$complementary1: #e63946;
+$complementary2: #1d3557;
+$complementary3: #a8dadc;
+$text-color: #f1faee;
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$m-2: 2px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: $secondarycolor;
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+.dot {
+  display: block;
+  border-radius: 50%;
+  margin: 3px;
+}
+.dot1 {
+  width: 25px;
+  height: 25px;
+  background-color: $primarycolor;
+}
+.dot2 {
+  width: 35px;
+  height: 35px;
+  background-color: $complementary3;
+}
+.dot3 {
+  width: 45px;
+  height: 45px;
+  background-color: $complementary2;
+}
+.dot4 {
+  width: 55px;
+  height: 55px;
+  background-color: $complementary1;
+}
+.dot5 {
+  width: 65px;
+  height: 65px;
+  background-color: $primarycolor;
+}
+.dot6 {
+  width: 75px;
+  height: 75px;
+  background-color: $complementary3;
+}
+.dot7 {
+  width: 85px;
+  height: 85px;
+  background-color: $complementary2;
+}
+.dot8 {
+  width: 95px;
+  height: 95px;
+  background-color: $complementary1;
+}
+.dot9 {
+  width: 105px;
+  height: 105px;
+  background-color: $primarycolor;
+}
+.dot10 {
+  width: 115px;
+  height: 115px;
+  background-color: $complementary2;
+}
+// span {
+//   color: $complementary1;
+// }
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: end;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  h3 {
+    font-family: $font;
+    font-weight: bold;
+    font-size: 64px;
+    margin: $m-2;
+    color: $complementary2;
+    span {
+      color: $complementary1;
+    }
+  }
+  p {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 36px;
+    margin: $m-2;
+    color: $complementary2;
+  }
+  hr {
+    width: 10%;
+    height: 5px;
+    text-align: right;
+    margin: $m-2;
+    margin-top: 10px;
+    background-color: $complementary1;
+  }
+  #questions,
+  #answers {
+    margin-bottom: 10px;
+  }
+  input {
+    margin: 30px 10px;
+    border: 0px;
+    transform: scale(2.0);
+  }
+  label {
+    font-family: $font;
+    color: $complementary1;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .btns {
+    align-self: flex-end;
+    padding-right: 70px;
+  }
+  button {
+    width: 100px;
+    height: 40px;
+    color: $complementary2;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: $secondarycolor;
+    border: 5px solid $complementary2;
+  }
+  #submit {
+    border: 5px solid $complementary1;
+  }
+}
+.hide {
+  display: none;
+}
